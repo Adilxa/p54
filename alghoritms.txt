@@ -1,0 +1,47 @@
+venmak_roge
+
+// const arr = ["adil" , "adil" , "atai" , "nege"];
+
+// const findUinq = (arr) => {
+    
+//     const newArray = [];
+    
+//     for(let i = 0; i < arr.length; i++){
+        
+//         if(newArray.includes(arr[i])){
+//             console.log(arr[i] , " is have been")
+//         }else{
+//             newArray.push(arr[i])
+//         }
+//     }
+//     return newArray
+// }
+
+// const test = findUinq(arr)
+
+// console.log(test)
+
+
+console.log([{id:1} , {id:3} , {id:2} , {id:4}].sort((a,b ) => a.id - b.id))
+console.log([{type:true , id:1} , {type:true , id:2} , {type:false , id:2} , {type:true , id:3}].filter((el) => el.type == false))
+
+
+const arr = ["adi" , "atai" , "adi"];
+
+const getUniq = (arr) => {
+    
+    const newArr = []
+    
+    for(let i = 0; i < arr.length; i++){
+        
+        if(newArr.includes(arr[i])){
+            console.log(arr[i], "Have been")
+        }else{
+            newArr.push(arr[i])
+        }
+        
+    }
+    return newArr
+}
+
+console.log(getUniq(arr))
